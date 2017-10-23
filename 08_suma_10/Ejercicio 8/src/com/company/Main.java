@@ -11,13 +11,16 @@ public class Main {
         BufferedReader br = new BufferedReader (new InputStreamReader(System.in));
         double z = 0;
         double b = 1;
-        do{
+        for (z = 0; b <= 10; b++) {
+
 
             System.out.print("Introducir numero: ");
             double a = Double.parseDouble(br.readLine());
-            b++;
+
             z = z + a;
-        }while(b <= 10);
+        }
+
+
         System.out.println("El resultado es: ");
         System.out.println(z);
 

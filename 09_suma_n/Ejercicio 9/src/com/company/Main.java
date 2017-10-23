@@ -14,11 +14,12 @@ public class Main {
         b = 0;
         System.out.print("Cuantos valores quieres sumar?: ");
         a = Double.parseDouble(br.readLine());
-        while (a != 0) {
+        for (c = 0; a != 0; a--) {
+
+
             System.out.print("Introducir numero: ");
             b = Double.parseDouble(br.readLine());
             c = c + b;
-            a = a - 1;
         }
         System.out.println("El resultado es: ");
         System.out.println(c);
